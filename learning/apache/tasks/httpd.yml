@@ -1,0 +1,15 @@
+---
+- name: Install Httpd Service
+  yum:
+   name: httpd
+   state: present
+
+- name: Start Httpd Service
+  service:
+   name: httpd
+   state: started
+
+- name: Copy index.html
+  copy:
+    src: index.html
+    dest: /var/www/html/

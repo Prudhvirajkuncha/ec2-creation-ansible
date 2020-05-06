@@ -1,0 +1,18 @@
+---
+# vars file for instance
+
+
+- ec2
+  region: ***
+  credentials: Ohio-region-key
+  image: ami-0f7919c33c90f5b58
+  sg: Test SG
+  instance_type: t2.micro
+  subnet: subnet-d5f57699
+  public_ip: yes
+  tags:
+    Name: Ec2viaAnsible
+  volumes:
+    - device_name: /dev/xvda
+      volume_type: standard
+      volume_size: 8

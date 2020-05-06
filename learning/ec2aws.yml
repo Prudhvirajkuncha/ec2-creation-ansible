@@ -1,0 +1,6 @@
+# Instance creation
+
+- hosts: webservers
+  roles:
+    - instance
+  tags: ec2_create
